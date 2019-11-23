@@ -6,3 +6,4 @@ d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.exe
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.pdb
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csprojResolveAssemblyReference.cache
