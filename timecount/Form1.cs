@@ -37,6 +37,13 @@ namespace timecount
             userControl14.ResetAllTime();
             userControl15.ResetAllTime();
         }
+
+ 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(label2, "Power By cuisanzhang@163.com");
+        }
  
  
 
