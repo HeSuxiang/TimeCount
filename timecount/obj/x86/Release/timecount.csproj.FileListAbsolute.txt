@@ -1,0 +1,8 @@
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\bin\Release\timecount.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\bin\Release\timecount.pdb
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.Form1.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.Properties.Resources.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.UserControl1.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.pdb

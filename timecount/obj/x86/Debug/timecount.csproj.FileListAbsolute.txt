@@ -1,0 +1,9 @@
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\bin\Debug\timecount.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\bin\Debug\timecount.pdb
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.Properties.Resources.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.UserControl1.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.csproj.GenerateResource.Cache
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.pdb
+d:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.Form1.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.csprojResolveAssemblyReference.cache
