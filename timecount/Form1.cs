@@ -91,5 +91,37 @@ namespace timecount
             //}
         }
 
+
+
+        //左、右方向键，及回车键切换控件焦点
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+           
+
+            switch (keyData)
+            {
+                case Keys.Left:
+                    System.Windows.Forms.SendKeys.Send("+{Tab}");;  //向左改成+Tab
+                    return true;
+                case Keys.Right:
+                    System.Windows.Forms.SendKeys.Send("{Tab}"); //向右改成Tab
+                    return true;
+                case Keys.Enter:
+                    System.Windows.Forms.SendKeys.Send("{Tab}"); //确认改成Tab
+                    return true;
+                default:
+                    break;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);   //其他键按默认处理
+        }
+
     }
+
+
+
+
+
+
+
+
 }
