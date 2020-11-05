@@ -18,6 +18,20 @@ namespace timecount
             InitializeComponent();
         }
 
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(label2, "Power By cuisanzhang@163.com");
+        }
+
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            //悬浮置顶窗口
+            this.TopMost = true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int time1;
@@ -35,7 +49,8 @@ namespace timecount
             }
             catch (Exception ex)
             {
-                MessageBox.Show("时间错误，请检查输入");
+                //输入时间错误
+                label1.Text = "时间错误，请检查输入";
                 return;
             }
 
@@ -57,14 +72,9 @@ namespace timecount
             userControl13.ResetAllTime();
             userControl14.ResetAllTime();
             userControl15.ResetAllTime();
+            label1.Text =  "请输入时间";
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            toolTip1.SetToolTip(label2, "Power By cuisanzhang@163.com");
-        }
 
 
         private void WriteToText(String line)
@@ -109,10 +119,29 @@ namespace timecount
                 case Keys.Enter:
                     System.Windows.Forms.SendKeys.Send("{Tab}"); //确认改成Tab
                     return true;
+                case Keys.Delete:
+                    button2.PerformClick();
+                    return true;
+                case Keys.End:
+                    button1.PerformClick();
+                    return true;
                 default:
                     break;
             }
             return base.ProcessCmdKey(ref msg, keyData);   //其他键按默认处理
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //悬浮置顶窗口
+            if (checkBox1.Checked == true)
+            {
+                this.TopMost = true;
+            }
+            else
+            {
+                this.TopMost = false;
+            }
         }
 
     }

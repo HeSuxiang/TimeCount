@@ -29,6 +29,8 @@ namespace timecount
 
         public int GetTimeOfMinute()
         {
+           
+
             int totalMinute = 0;
 
             int hour1 = int.Parse(comboBox1.Text);
@@ -37,6 +39,21 @@ namespace timecount
             int minute1 = int.Parse(comboBox2.Text);
             int minute2 = int.Parse(comboBox4.Text);
             //label5.Text = "hour1=" + hour1 + " hour2=" + hour2 + " minute1=" + minute1 + " minute2=" + minute2;
+
+            //检查输入时间长度。第一个时间必须必第二个时间早，否则抛异常
+            if ( CheckTimeFormat() == false || (hour1 > hour2))
+            {
+                label5.Text = "时间错误";
+                throw (new Exception());
+            }
+
+            //第一个时间必须必第二个时间早，否则抛异常
+            if ((hour1 >= hour2) && (minute1 > minute2))
+            {
+                label5.Text = "时间错误";
+                throw(new Exception());
+            }
+
 
             totalMinute = ((hour2 - hour1) * 60) + (minute2 - minute1);
             label5.Text = "" + totalMinute / 60 + "小时" + totalMinute % 60 + "分钟";
@@ -61,9 +78,10 @@ namespace timecount
         public void ResetAllTime()
         {
             comboBox1.Text = "08";
-            comboBox3.Text = "08";
             comboBox2.Text = "00";
+            comboBox3.Text = "08";
             comboBox4.Text = "00";
+            label5.Text = "单次时间";
         }
 
 
