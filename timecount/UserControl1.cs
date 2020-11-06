@@ -74,9 +74,16 @@ namespace timecount
             return true;
         }
 
-
-        public void ResetAllTime()
+        //重置焦点
+        public void getFocus()
         {
+            comboBox1.Focus();
+        }
+
+        //重置白天时间
+        public void ResetAllLightTime()
+        {
+            
             comboBox1.Text = "08";
             comboBox2.Text = "00";
             comboBox3.Text = "08";
@@ -84,6 +91,15 @@ namespace timecount
             label5.Text = "单次时间";
         }
 
+        //重置晚上加班时间
+        public void ResetAllNightTime()
+        {
+            comboBox1.Text = "18";
+            comboBox2.Text = "00";
+            comboBox3.Text = "18";
+            comboBox4.Text = "00";
+            label5.Text = "单次时间";
+        }
 
  
     }

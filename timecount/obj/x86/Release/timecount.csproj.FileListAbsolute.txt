@@ -6,7 +6,6 @@ d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.exe
 d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.pdb
-d:\用户目录\我的文档\visual studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.exe
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.pdb
 C:\Users\Administrator\timecount\timecount\bin\Release\timecount.exe
@@ -16,3 +15,4 @@ C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.Form1.resou
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.Properties.Resources.resources
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.UserControl1.resources
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csprojResolveAssemblyReference.cache

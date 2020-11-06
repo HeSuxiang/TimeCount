@@ -23,6 +23,7 @@ namespace timecount
         private void Form1_Load(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(label2, "Power By cuisanzhang@163.com");
+            button2.PerformClick();
         }
 
 
@@ -30,6 +31,7 @@ namespace timecount
         {
             //悬浮置顶窗口
             this.TopMost = true;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +41,8 @@ namespace timecount
             int time3;
             int time4;
             int time5;
+            int time6;
+            int time7;
             try
             {
                  time1 = userControl11.GetTimeOfMinute();
@@ -46,6 +50,8 @@ namespace timecount
                  time3 = userControl13.GetTimeOfMinute();
                  time4 = userControl14.GetTimeOfMinute();
                  time5 = userControl15.GetTimeOfMinute();
+                 time6 = userControl16.GetTimeOfMinute();
+                 time7 = userControl17.GetTimeOfMinute();
             }
             catch (Exception ex)
             {
@@ -54,10 +60,17 @@ namespace timecount
                 return;
             }
 
-            int totalMinute = time1 + time2 + time3 + time4 + time5;
+            int LightTime = time1 + time2 + time3 + time4 + time5;
             //totalMinute = ((hour2 - hour1) * 60) + (minute2 - minute1);
-            String allTime = "总时间为" + totalMinute / 60 + "小时" + totalMinute % 60 + "分钟";
+            String light = "白天总时间为" + LightTime / 60 + "小时" + LightTime % 60 + "分钟,  ";
+
+
+            int NightTime = time6 + time7;
+            String night = "加班总时间为" + NightTime / 60 + "小时" + NightTime % 60 + "分钟";
+
+            String allTime = light + night; 
             label1.Text = allTime;
+            
             //label1.Text = "总时间为" + time1 + "分钟";
             WriteToText(DateTime.Now.ToString() + "\t" + allTime);
             label3.Text = allTime + ",结果已记录到timecout.txt";
@@ -67,11 +80,16 @@ namespace timecount
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userControl11.ResetAllTime();
-            userControl12.ResetAllTime();
-            userControl13.ResetAllTime();
-            userControl14.ResetAllTime();
-            userControl15.ResetAllTime();
+            userControl11.getFocus();
+
+            userControl11.ResetAllLightTime();
+            userControl12.ResetAllLightTime();
+            userControl13.ResetAllLightTime();
+            userControl14.ResetAllLightTime();
+            userControl15.ResetAllLightTime();
+
+            userControl16.ResetAllNightTime();
+            userControl17.ResetAllNightTime();
             label1.Text =  "请输入时间";
         }
 
@@ -119,12 +137,19 @@ namespace timecount
                 case Keys.Enter:
                     System.Windows.Forms.SendKeys.Send("{Tab}"); //确认改成Tab
                     return true;
-                case Keys.Delete:
-                    button2.PerformClick();
+                case Keys.PageUp:
+                    userControl11.getFocus(); //PaegDown切换白天输入焦点
+                    return true;
+                case Keys.PageDown:
+                    userControl16.getFocus(); //PaegDown切换晚上输入焦点
                     return true;
                 case Keys.End:
-                    button1.PerformClick();
+                    button1.PerformClick(); //End 计算
                     return true;
+                case Keys.Delete:
+                    button2.PerformClick(); //Delete 重置
+                    return true;
+
                 default:
                     break;
             }
@@ -143,6 +168,12 @@ namespace timecount
                 this.TopMost = false;
             }
         }
+
+ 
+ 
+
+ 
+ 
 
     }
 
