@@ -14,4 +14,3 @@ C:\Users\Administrator\timecount\timecount\obj\x86\Debug\timecount.UserControl1.
 C:\Users\Administrator\timecount\timecount\obj\x86\Debug\timecount.csproj.GenerateResource.Cache
 C:\Users\Administrator\timecount\timecount\bin\Debug\timecount.exe
 C:\Users\Administrator\timecount\timecount\bin\Debug\timecount.pdb
-D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Debug\timecount.csprojResolveAssemblyReference.cache

@@ -143,8 +143,10 @@ namespace timecount
                 case Keys.PageDown:
                     userControl16.getFocus(); //PaegDown切换晚上输入焦点
                     return true;
-                case Keys.End:
-                    button1.PerformClick(); //End 计算
+                //case Keys.End: //End 计算
+                case Keys.Add:
+                case Keys.Space:
+                    button1.PerformClick(); //add 空格 计算
                     return true;
                 case Keys.Delete:
                     button2.PerformClick(); //Delete 重置
@@ -168,6 +170,8 @@ namespace timecount
                 this.TopMost = false;
             }
         }
+
+   
 
  
  
