@@ -53,7 +53,7 @@ namespace timecount
                  time6 = userControl16.GetTimeOfMinute();
                  time7 = userControl17.GetTimeOfMinute();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //输入时间错误
                 label1.Text = "时间错误，请检查输入";
@@ -80,7 +80,6 @@ namespace timecount
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userControl11.getFocus();
 
             userControl11.ResetAllLightTime();
             userControl12.ResetAllLightTime();
@@ -91,6 +90,9 @@ namespace timecount
             userControl16.ResetAllNightTime();
             userControl17.ResetAllNightTime();
             label1.Text =  "请输入时间";
+
+            //白天输入框重新获取焦点
+            userControl11.getFocus();
         }
 
 

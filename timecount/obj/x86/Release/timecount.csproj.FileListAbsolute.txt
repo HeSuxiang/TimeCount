@@ -7,3 +7,11 @@ C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.Form1.resou
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.Properties.Resources.resources
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.UserControl1.resources
 C:\Users\Administrator\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\bin\Release\timecount.exe
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\bin\Release\timecount.pdb
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.Form1.resources
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.Properties.Resources.resources
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.UserControl1.resources
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.csproj.GenerateResource.Cache
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.exe
+D:\用户目录\我的文档\Visual Studio 2010\Projects\timecount\timecount\obj\x86\Release\timecount.pdb
